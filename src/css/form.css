@@ -1,0 +1,38 @@
+.form {
+    margin: 36px;
+
+}
+
+.input-css {
+    width: 264px;
+    height: 34px;
+    margin-right: 8px;
+    border-radius: 8px;
+    border-width: 1px;   
+    border-color: rgba(0, 0, 0, 0.5);
+}
+.input-css:hover{
+    border-color:rgba(0, 0, 0, 0.8);
+}
+.input-css:focus{
+    outline: none;
+    border-color: #4e75ff;
+}
+
+.button-css {
+    background: #4e75ff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 91px;
+    height: 40px;
+}
+.button-css:hover,
+.button-css:focus{
+    background: #6c8cff;
+}
