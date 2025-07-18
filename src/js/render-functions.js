@@ -10,7 +10,7 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 
 const galleryContainer = document.querySelector('.gallery');
 const lightbox = new SimpleLightbox('.gallery a', { 
-    captionsData: 'img',
+    captionsData: 'alt',
     captionPosition: 'bottom',
     captionDelay: 250,
 });
