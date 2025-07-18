@@ -1,5 +1,12 @@
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
 .form {
     margin: 36px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -35,4 +42,71 @@
 .button-css:hover,
 .button-css:focus{
     background: #6c8cff;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 3px solid #4e75ff;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    margin-left: auto;
+    margin-right: auto;
+}
+.is-hidden {
+    display: none;
+}
+.loader::after {
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    left: 20px;
+    top: 31px;
+    border: 10px solid transparent;
+    border-right-color: #4e75ff;
+    transform: rotate(-40deg);
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+ul {
+    list-style: none;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 60px;
+    column-gap: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.gallery-item {
+    box-sizing: border-box;
+    width: calc((100% - 48px) /3);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+
+}
+.gallery-item:hover,
+.gallery-item:focus{
+    border-color: rgba(0, 0, 0, 0.8);
+}
+
+.info{
+display: flex;
+gap: 15px;
+padding: 10px;
+justify-content: center;
+border: 1px solid rgba(0, 0, 0, 0.8);
 }
