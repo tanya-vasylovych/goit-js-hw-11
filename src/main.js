@@ -12,6 +12,12 @@ const onFormSubmit = event => {
     event.preventDefault();
     clearGallery();
     const query = event.currentTarget.elements['search-text'].value.trim();
+    if (query === '') {
+        iziToast.info({
+            message: 'Insert the search request.'
+        })
+        return;
+    }
    
     showLoader();
 
